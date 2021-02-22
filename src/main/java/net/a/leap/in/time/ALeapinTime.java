@@ -3,13 +3,10 @@ package net.a.leap.in.time;
 import net.fabricmc.api.ModInitializer;
 
 public class ALeapinTime implements ModInitializer {
+	public static final String MOD_ID = "a_leap_in_time";
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		System.out.println("Hello Fabric world!");
+		//Something isn't right why are you not committing?
+		System.out.println("Changed this for now to make sure the git push from Ij works");
 	}
 }
-	

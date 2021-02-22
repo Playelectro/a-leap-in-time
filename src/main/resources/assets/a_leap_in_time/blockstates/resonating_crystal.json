@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "age=0": { "model": "a_leap_in_time:block/crystal_1" },
+    "age=1": { "model": "a_leap_in_time:block/crystal_2" },
+    "age=2": { "model": "a_leap_in_time:block/crystal_3" },
+    "age=3": { "model": "a_leap_in_time:block/crystal_4" }
+
+
+  }
+}

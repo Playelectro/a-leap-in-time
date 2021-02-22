@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "a_leap_in_time:items/resonating_shard"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 4
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "a_leap_in_time:resonating_shard",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "a_leap_in_time:resonating_crystal",
+              "properties": {
+                "age": "4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

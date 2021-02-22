@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "a_leap_in_time",
+  "version": "${version}",
+
+  "name": "A leap in time",
+  "description": "A mod focused on cronomagic!",
+  "authors": [
+    "Ancient_Spirit"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/a_leap_in_time/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.a.leap.in.time.ALeapinTime"
+    ]
+  },
+  "mixins": [
+    
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

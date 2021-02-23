@@ -17,6 +17,7 @@ import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -29,7 +30,10 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Random;
 
 public class ResonatingCrystal extends Block {
+
     public static final IntProperty AGE = IntProperty.of("age",0,3);
+
+
     public ResonatingCrystal() {
         super(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).hardness(4f).breakByTool(FabricToolTags.PICKAXES,2).ticksRandomly().requiresTool().nonOpaque().noCollision().velocityMultiplier(0.1f));
         setDefaultState(getStateManager().getDefaultState().with(AGE, 0));
@@ -37,7 +41,7 @@ public class ResonatingCrystal extends Block {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return VoxelShapes.cuboid(0.4,0,0.4,0.6,0.9,0.6);
+        return VoxelShapes.cuboid(0.3,0,0.3,0.7,0.5,0.7);
     }
 
     @Override
